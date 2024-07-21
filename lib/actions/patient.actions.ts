@@ -14,8 +14,6 @@ export const createUser = async (user: CreateUserParams) => {
       undefined,
       user.name
     );
-
-    console.log("API response from Appwrite:", newUser);
   } catch (error: any) {
     if (error && error?.code === 409) {
       const documents = await users.list([Query.equal("email", [user.email])]);
@@ -28,8 +26,6 @@ export const createUser = async (user: CreateUserParams) => {
 export const getUser = async (userId: string) => {
   try {
     const user = await users.get(userId);
-
-    console.log("API response from Appwrite:", user);
 
     return parseStringify(user);
   } catch (error) {
@@ -66,8 +62,10 @@ export const registerPatient = async ({
         ID.unique(),
 
         {
-          identificationDocumentId: file?.$id || null,
-          identificationDocumentUrl: `${process.env.NEXT_PUBLIC_ENDPOINT}/storage/buckets/${process.env.NEXT_PUBLIC_BUCKET_ID}/files/${file?.$id}/view?project=${process.env.NEXT_PUBLIC_PROJECT_ID}`,
+          identificationDocumentId: file?.$id ? file.$id : null,
+          identificationDocumentUrl: file?.$id
+            ? `${process.env.NEXT_PUBLIC_ENDPOINT}/storage/buckets/${process.env.NEXT_PUBLIC_BUCKET_ID}/files/${file?.$id}/view?project=${process.env.NEXT_PUBLIC_PROJECT_ID}`
+            : null,
           ...patient,
         }
       );
