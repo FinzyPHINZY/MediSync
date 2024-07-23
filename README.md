@@ -43,6 +43,9 @@ Looking back, this project has been a fantastic learning curve. Each new technol
 
 In conclusion, this project has been more than just a technical exercise; it’s been a journey of growth and discovery. The lessons learned here will undoubtedly inform my future work and help me tackle new challenges with greater confidence and expertise.
 
+![Admin Page](https://github.com/user-attachments/assets/45d0eab0-5027-4b45-ac22-3d1f0a38ed77)
+
+
 ## Optimizations
 
 The application has been optimized to ensure high performance and reliability. Here are the key optimizations:
@@ -57,6 +60,12 @@ The application has been optimized to ensure high performance and reliability. H
 - Ensures a consistent user interface and improves accessibility out of the box.
 - Ensures reliable and scalable communication with users through SMS and email.
 - Timely notifications enhance user engagement and satisfaction.
+
+![Appointment Booking Page](https://github.com/user-attachments/assets/920e61e0-6018-425c-b46b-a7f77d8ca6b8)
+
+
+![Appointment Booking Page](https://github.com/user-attachments/assets/7b698d29-b162-4e2a-8452-8eab474f6454)
+
 
 ## Getting Started
 
