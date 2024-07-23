@@ -100,7 +100,7 @@ export function DataTable<TData, TValue>({
         <Button
           variant="outline"
           size="sm"
-          onClick={() => table.nextpage()}
+          onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
           className="shad-gray-btn"
         >
@@ -109,7 +109,7 @@ export function DataTable<TData, TValue>({
             width={24}
             height={24}
             alt="arrow"
-            className='rotate-180'
+            className="rotate-180"
           />
         </Button>
       </div>
