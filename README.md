@@ -1,10 +1,14 @@
-# My Project
+# CarePulse
 
 ## Overview
 
 A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js, TypeScript and TailwindCSS.
 
 This project is a comprehensive web application designed to deliver an exceptional user experience while maintaining high performance and reliability. The project leverages modern technologies and libraries to ensure smooth functionality, robust error tracking, and efficient data handling.
+
+![Showcase](https://github.com/user-attachments/assets/526d004b-8fd1-4229-8988-a22b8a162774)
+
+
 
 - **Repository:** [Click here](https://github.com/FinzyPHINZY/carepulse)
 - **Live Preview** [Live Preview](https://carepulse-delta.vercel.app/)
